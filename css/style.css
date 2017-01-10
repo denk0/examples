@@ -1,0 +1,184 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+ 	content: " "; /* 1 */
+ 	display: table; /* 2 */
+ }
+
+ .cf:after {
+ 	clear: both;
+ }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+ .cf {
+ 	*zoom: 1;
+ }
+ .ba-section {
+ 	clear: both;
+ 	padding: 40px 0;
+ 	text-align: center;
+ }
+ .ba-title {
+ 	text-align: center;
+ }
+
+ /* dropdown part */
+ .ba-navigation ul {
+ 	list-style-type: none;
+ }
+ .ba-navigation > ul > li {
+ 	float: left;
+ 	margin: 0 10px;
+ }
+ .ba-has-dropdown {
+ 	position: relative;
+ }
+ .ba-dropdown-toggle {
+ 	cursor: pointer;
+ }
+ .ba-dropdown {
+ 	margin: 0;
+ 	padding: 10px 0 0;
+ 	position: absolute;
+ 	left: 0;
+ 	top: 100%;
+ 	display: none;
+ }
+
+ /* popup part */
+ .ba-open-popup {
+ 	cursor: pointer;
+ }
+ .ba-popup {
+ 	position: fixed;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+ 	background-color: grey;
+ 	border: 1px solid #000;
+ 	padding: 20px;
+ 	display: none;
+ }
+ .ba-close {
+ 	position: absolute;
+ 	right: 5px;
+ 	top: 5px;
+ 	cursor: pointer;
+ }
+
+ /* isotope part */
+ .ba-section--centered {
+ 	width: 800px;
+ 	margin: 0 auto;
+ }
+ .ba-filters__list {
+ 	list-style-type: none;
+ 	margin: 10px 0 0 0;
+ 	padding: 0;
+ }
+ .ba-filters__list li {
+ 	display: inline-block;
+ }
+ .ba-box {
+ 	width: 180px;
+ 	float: left;
+ 	background-color: purple;
+ 	margin: 20px 10px;
+ }
+ .ba-box--square {
+ 	height: 180px;
+ }
+ .ba-box--rectangle {
+ 	height: 150px;
+ }
+ .ba-box--circle {
+ 	height: 180px;
+ 	border-radius: 50%;
+ }
+ .ba-box--oval {
+ 	height: 150px;
+ 	border-radius: 50%;
+ }
+ .ba-box--red {
+ 	background-color: red;
+ }
+ .ba-box--blue {
+ 	background-color: blue;
+ }
+ .ba-box--green {
+ 	background-color: green;
+ }
+ .ba-box--yellow {
+ 	background-color: yellow;
+ }
+
+ /* masonry part */
+.ba-masonry-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* clearfix */
+.ba-masonry-grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.grid-item {
+  width: 160px;
+  height: 120px;
+  float: left;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.grid-item--width2 { width: 320px; }
+.grid-item--width3 { width: 480px; }
+.grid-item--width4 { width: 640px; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
+
+/* sliders part */
+.ba-section-sliders {
+	background-color: #f2eded;
+}
+.ba-slider {
+	width: 800px;
+	margin: 40px auto 40px;
+}
+.ba-slide {
+	background-color: purple;
+	margin: 0 10px;
+	height: 200px;
+	transition: all .2s ease-in;
+}
+#ba-slider-3 .ba-slide.slick-current {
+	height: 210px;
+	background-color: #aa0caa;
+}
+
+
+
+
+
+
+
+
+
+
+

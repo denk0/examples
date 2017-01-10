@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Examples</title>
+    <!-- Slick slider styles -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Dropdown part -->
+  <header class="ba-header">
+      <h2 class="ba-title">Dropdown with jQuery and css</h2>
+      <nav class="ba-navigation">
+         <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li class="ba-has-dropdown">
+               <a href="#">Item 3</a>
+               <button class="ba-dropdown-toggle">Toggle</button>
+               <ul class="ba-dropdown">
+                  <li><a href="#">Sub item 1</a></li>
+                  <li><a href="#">Sub item 2</a></li>
+                  <li><a href="#">Sub item 3</a></li>
+                  <li><a href="#">Sub item 4</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Item 4</a></li>
+          <li><a href="#">Item 5</a></li>
+          <li><a href="#">Item 6</a></li>
+          <li><a href="#">Item 7</a></li>
+          <li><a href="#">Item 8</a></li>
+      </ul>
+  </nav>
+</header>
+
+<!-- Popup part -->
+<section class="ba-section">
+  <h2 class="ba-title">Popup with jQuery and css</h2>
+  <p>Attetion! We can use different popups with data attributes</p>
+  <button class="ba-open-popup" data-popup='1'>Open popup 1</button>
+  <button class="ba-open-popup" data-popup='2'>Open popup 2</button>
+  <div class="ba-popup" data-popup='1'>
+    <button class="ba-close">x</button>
+    <h3>Attention this is First Popup!</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis architecto corporis saepe ratione dolorum aut atque! A facere alias rem suscipit, nulla iste cum maiores magnam excepturi sapiente. Error, voluptatem.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sit laudantium, quis quae obcaecati aliquam animi enim veniam ducimus, adipisci, at id possimus, natus voluptatibus eligendi quaerat? Cum, doloremque, pariatur.
+</div>
+<div class="ba-popup" data-popup="2">
+    <button class="ba-close">x</button>
+    <h3>Attention this is Second Popup!</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis architecto corporis saepe ratione dolorum aut atque! A facere alias rem suscipit, nulla iste cum maiores magnam excepturi sapiente. Error, voluptatem.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sit laudantium, quis quae obcaecati aliquam animi enim veniam ducimus, adipisci, at id possimus, natus voluptatibus eligendi quaerat? Cum, doloremque, pariatur.
+</div>
+</section>
+
+<!-- Isotope part -->
+<section class="ba-section ba-section--centered">
+    <h2 class="ba-title">Filtering with Isotope</h2>
+    <h3>Simple</h3>
+    <div id="simple-filters" class="ba-filters">
+        <ul class="ba-filters__list ba-filters__list--type">
+            <li><button data-filter="*">Any</button></li>
+            <li><button data-filter=".ba-box--square">Squares</button></li>
+            <li><button data-filter=".ba-box--rectangle">Rectangles</button></li>
+            <li><button data-filter=".ba-box--circle">Circles</button></li>
+            <li><button data-filter=".ba-box--oval">Ovals</button></li>
+        </ul>
+    </div>
+    <div class="ba-grid cf" id="simple-grid">
+        <div class="ba-box ba-box--square"></div>
+        <div class="ba-box ba-box--rectangle"></div>
+        <div class="ba-box ba-box--square"></div>
+        <div class="ba-box ba-box--oval"></div>
+        <div class="ba-box ba-box--circle"></div>
+        <div class="ba-box ba-box--rectangle"></div>
+        <div class="ba-box ba-box--oval"></div>
+        <div class="ba-box ba-box--square"></div>
+        <div class="ba-box ba-box--circle"></div>
+        <div class="ba-box ba-box--oval"></div>
+        <div class="ba-box ba-box--rectangle"></div>
+        <div class="ba-box ba-box--square"></div>
+        <div class="ba-box ba-box--circle"></div>
+        <div class="ba-box ba-box--oval"></div>
+        <div class="ba-box ba-box--square"></div>
+        <div class="ba-box ba-box--circle"></div>
+    </div>
+    <h3>Advanced</h3>
+    <div class="ba-filters" id="advanced-filters">
+        <ul class="ba-filters__list ba-filters__list--type" data-filter-group="type">
+            <li><button data-filter="*">Any</button></li>
+            <li><button data-filter=".ba-box--square">Squares</button></li>
+            <li><button data-filter=".ba-box--rectangle">Rectangles</button></li>
+            <li><button data-filter=".ba-box--circle">Circles</button></li>
+            <li><button data-filter=".ba-box--oval">Ovals</button></li>
+        </ul>
+        <ul class="ba-filters__list ba-filters__list--color" data-filter-group="color">
+            <li><button data-filter="*">Any</button></li>
+            <li><button data-filter=".ba-box--red">Red</button></li>
+            <li><button data-filter=".ba-box--green">Green</button></li>
+            <li><button data-filter=".ba-box--blue">Blue</button></li>
+            <li><button data-filter=".ba-box--yellow">Yellow</button></li>
+        </ul>
+    </div>
+    <div class="ba-grid cf" id="advanced-grid">
+        <div class="ba-box ba-box--square ba-box--red"></div>
+        <div class="ba-box ba-box--rectangle ba-box--green"></div>
+        <div class="ba-box ba-box--square ba-box--blue"></div>
+        <div class="ba-box ba-box--oval ba-box--red"></div>
+        <div class="ba-box ba-box--circle ba-box--yellow"></div>
+        <div class="ba-box ba-box--rectangle ba-box--red"></div>
+        <div class="ba-box ba-box--oval ba-box--yellow"></div>
+        <div class="ba-box ba-box--square ba-box--green"></div>
+        <div class="ba-box ba-box--circle ba-box--red"></div>
+        <div class="ba-box ba-box--oval ba-box--blue"></div>
+        <div class="ba-box ba-box--rectangle ba-box--yellow"></div>
+        <div class="ba-box ba-box--square ba-box--yellow"></div>
+        <div class="ba-box ba-box--circle ba-box--red"></div>
+        <div class="ba-box ba-box--oval ba-box--green"></div>
+        <div class="ba-box ba-box--square ba-box--yellow"></div>
+        <div class="ba-box ba-box--circle ba-box--blue"></div>
+    </div>
+</section>
+
+<!-- masonry part -->
+<section class="ba-section">
+    <h2 class="ba-title">Masonry layout</h2>
+    <div class="ba-masonry-grid">
+        <div class="grid-item"></div>
+        <div class="grid-item grid-item--width2 grid-item--height2"></div>
+        <div class="grid-item grid-item--height3"></div>
+        <div class="grid-item grid-item--height2"></div>
+        <div class="grid-item grid-item--width3"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item grid-item--height2"></div>
+        <div class="grid-item grid-item--width2 grid-item--height3"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item grid-item--height2"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item grid-item--width2 grid-item--height2"></div>
+        <div class="grid-item grid-item--width2"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item grid-item--height2"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item grid-item--height3"></div>
+        <div class="grid-item grid-item--height2"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item grid-item--height2"></div>
+    </div>
+</section>
+
+<!-- slider part -->
+<section class="ba-section ba-section-sliders">
+    <h2 class="ba-title">Sliders with slick</h2>
+    <div class="ba-slider" id="ba-slider-1">
+        <div class="ba-slide"></div>
+        <div class="ba-slide"></div>
+        <div class="ba-slide"></div>
+        <div class="ba-slide"></div>
+        <div class="ba-slide"></div>
+        <div class="ba-slide"></div>
+    </div>
+    <div class="ba-slider" id="ba-slider-2">
+        <div class="ba-slide"></div>
+        <div class="ba-slide"></div>
+        <div class="ba-slide"></div>
+        <div class="ba-slide"></div>
+        <div class="ba-slide"></div>
+        <div class="ba-slide"></div>
+    </div>
+    <div class="ba-slider" id="ba-slider-3">
+        <div class="ba-slide"></div>
+        <div class="ba-slide"></div>
+        <div class="ba-slide"></div>
+        <div class="ba-slide"></div>
+        <div class="ba-slide"></div>
+        <div class="ba-slide"></div>
+    </div>
+</section>
+
+
+<!-- jQuery, required for all features -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+<!-- jQuery migrante, required for slick -->
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- Isotope, required for filtering/sorting -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<!-- Masonry, required for advanced layout -->
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<!-- Slick, required for slider -->
+<script src="slick/slick.min.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
